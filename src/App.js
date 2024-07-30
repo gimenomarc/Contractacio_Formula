@@ -37,7 +37,7 @@ function App() {
     }}>
       <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
         <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-screen-lg overflow-hidden">
-          <h1 className="text-3xl font-bold mb-6 text-center">Generador de Fórmules Matemàtiques V5.2</h1>
+          <h1 className="text-3xl font-bold mb-6 text-center">Generador de Fórmules Matemàtiques</h1>
           <form>
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2">
