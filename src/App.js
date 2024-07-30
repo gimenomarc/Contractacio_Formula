@@ -16,10 +16,12 @@ function App() {
 
   // Realizar la operación directamente
   const diff = numA - numB;
+  const twoDiff = 2 * diff;
+  const twoAminusB = 2 * numA - numB;
 
   const formula1 = `
-  \\text{Punts} = \\frac{(${diff}) \\times B_{max} - ${numA} \\times B_{mig,c} \\times B(\\%)^2 - 
-  (2 \\times (${diff}) \\times B_{max} - (2a - b) \\times B_{mig,c}) \\times B_{mig,c} \\times B(\\%)}
+  \\text{Punts} = \\frac{${diff} \\times B_{max} - ${numA} \\times B_{mig,c} \\times B(\\%)^2 - 
+  (${twoDiff} \\times B_{max} - ${twoAminusB} \\times B_{mig,c}) \\times B(\\%)}
   {B_{mig,c}^2 \\times (B_{mig,c} - B_{max})}
   `;
 
@@ -35,7 +37,7 @@ function App() {
     }}>
       <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
         <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-screen-lg overflow-hidden">
-          <h1 className="text-2xl font-bold mb-6 text-center">Generador de Fórmulas Matemáticas V5.2</h1>
+          <h1 className="text-3xl font-bold mb-6 text-center">Generador de Fórmules Matemàtiques V5.2</h1>
           <form>
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2">
@@ -79,3 +81,4 @@ function App() {
 }
 
 export default App;
+
